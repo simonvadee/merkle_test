@@ -31,10 +31,14 @@ Si je possède seulement le block L3 et la racine de l’arbre de merkle, je ne 
 
     III/ Quelles sont des exemples d’application pour un Merkle tree?
 
-Les propriétés qui rendent l’arbre de merkle intéressant sont :
-    - la possibilité de prouver l’intégrité des données d’un élément présent dans l’arbre (cf question 1)
-    - la possibilité de prouver l’appartenance d’une donnée à l’extrémité d’une branche de l’arbre (cf question 2) en disposant seulement d’un nombre réduit de noeuds
-    - le peu de ressources nécessaires pour stocker l’arbre (un hash ayant une taille fixe de quelques bytes seulement)
-    - le peu de puissance de calcul nécessaire pour effectuer les actions de vérification et d’appartenance des données à l’arbre
+Les propriétés qui rendent l’arbre de merkle intéressant sont les suivantes :
+    
+- la possibilité de prouver l’intégrité des données d’un élément présent dans l’arbre (cf question 1)
+    
+- la possibilité de prouver l’appartenance d’une donnée à l’extrémité d’une branche de l’arbre (cf question 2) en disposant seulement d’un nombre réduit de noeuds
+    
+- le peu de ressources nécessaires pour stocker l’arbre (un hash ayant une taille fixe de quelques bytes seulement)
+
+- le peu de puissance de calcul nécessaire pour effectuer les actions de vérification et d’appartenance des données à l’arbre
     
 Ces caractéristiques rendent son utilisation particulièrement utile dans les systèmes distribués ou décentralisés dans lesquels différents acteurs doivent pouvoir maintenir une structure de données et en vérifier l’intégrité de celles-ci sans dépendre d’une autorité centrale. Les protocoles blockchain comme Bitcoin, Ethereum, Hyperledger, Tendermint… utilisent tous les arbres de merkle, mais on peut aussi noter leur utilisation dans le système AntiEntropy de Apache Cassandra, dans le but de prévenir des erreurs lors d’une synchronisation de données entre plusieurs acteurs (noeuds du réseau) concurrents.
